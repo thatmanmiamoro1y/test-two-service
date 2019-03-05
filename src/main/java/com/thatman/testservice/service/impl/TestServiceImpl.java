@@ -21,6 +21,6 @@ public class TestServiceImpl implements TestService {
         User user=new User();
         System.out.println("------------------->>"+user.getUserName());
         System.out.println("------------------->>"+user.getUserPassword());
-        return testServiceThreeClient.getUser();
+        return testServiceFourClient.getUser();
     }
 }
