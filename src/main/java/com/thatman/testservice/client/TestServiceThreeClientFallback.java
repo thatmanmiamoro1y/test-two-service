@@ -5,7 +5,7 @@ import com.thatman.testservice.Entity.User;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TestServiceTwoClientFallback implements TestServiceTwoClient {
+public class TestServiceThreeClientFallback implements TestServiceThreeClient {
     @Override
     public User getUser() {
         User user=new User();
