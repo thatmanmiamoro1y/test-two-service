@@ -1,6 +1,12 @@
+server:
+  port: 8502
+  servlet:
+    context-path: /test-service-one
 spring:
   application:
-    name: test-service
+    name: test-service-one
+  profiles:
+    active: dev
   cloud:
     config:
       retry:
@@ -9,9 +15,11 @@ spring:
         multiplier: 2
         max-attempts: 10
       uri: http://localhost:8001
-      username: thatman
-      password: miamoro1y
+      username: thatman-config
+      password: thatman-config
       fail-fast: true
+      profile: dev
+      label: dev
 
 
 

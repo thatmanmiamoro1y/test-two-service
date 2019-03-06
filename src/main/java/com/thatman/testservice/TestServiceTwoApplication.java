@@ -9,10 +9,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableEurekaClient
 @EnableFeignClients
-public class TestServiceOneApplication {
+public class TestServiceTwoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestServiceOneApplication.class, args);
+        SpringApplication.run(TestServiceTwoApplication.class, args);
     }
 
 }
